@@ -1,0 +1,52 @@
+.hero-img {
+    background-image: url('static/img/banner-1.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.hero-img div {
+    background: rgba(256,256,256,0.6);
+    padding: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.work-categories .col-lg-4 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.work-categories h2 {
+    font-weight: 400;
+}
+
+.work-categories div div {
+    border-left: 1px dotted #aaa;
+}
+
+.pub-list .head {
+    border-bottom: 1px dotted #aaa;
+    margin-bottom: 1.5rem;
+}
+
+.pub-list .row h3 {
+    font-weight: 400;
+}
+
+.circ_img {
+    height: 20vw;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.circ_img img {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
