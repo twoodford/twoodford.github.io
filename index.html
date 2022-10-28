@@ -13,6 +13,7 @@
     
     <!-- Matomo -->
     <!--<script type="text/javascript" src="//mmw-dev-srv.dynamic.ucsd.edu/ma/matomo.js"></script>-->
+    <!--
     <script>
       var _paq = window._paq = window._paq || [];
       /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -26,6 +27,7 @@
         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
+    -->
     <!-- End Matomo Code -->
 
   </head>
@@ -117,6 +119,15 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7">
+                        <h3>M<sup>3</sup> Software-Defined Radar</h3>
+                        <p>
+                        We demoed an M-Cube software radar at Mobisys 2022, using a stock M-Cube software radio in conjunction with an FPGA design I developed.
+                        I am still working to release this software &mdash; please get in touch if interested, or for a demo.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
                         <h3>M<sup>3</sup> Phased Array Controller</h3>
                         <p>
                         A real-time phased array control device emitting a reverse-engineered version of Qualcomm's 60 GHz phased array control protocol.
@@ -159,11 +170,36 @@
 
 
             </div>
+
+
+            <div class="container pub-list">
+                <div class="row head">
+                    <h2 class="display-5">Contact Me</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>
+                        I am interested in collaborations with research groups, companies, and government organizations that can leverage my experience in creating real-world prototypes and testbeds to rapidly build and evaluate new networking and sensing ideas.
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>LinkedIn</h3>
+                        <p>I am on the job market, and am interested in both research lab and academic positions.</p>
+                        <p><a href="https://www.linkedin.com/in/tim-woodford-605b0a138/">Connect with me</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Email</h3>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <script type="text/javascript">
+            // Currently won't work due to UCSD ITS's incompetence
+        //var pingImg = new Image;
+        //pingImg.src="https://mmw-dev-srv.dynamic.ucsd.edu/YNcYLluYFUqHITTF/ping?referer="+encodeURIComponent(document.referrer)+"&url="+encodeURIComponent(window.location.href)+"&dt="+(new Date().getTime());
         var pingImg = new Image;
-        pingImg.src="https://mmw-dev-srv.dynamic.ucsd.edu/YNcYLluYFUqHITTF/ping?referer="+encodeURIComponent(document.referrer)+"&url="+encodeURIComponent(window.location.href)+"&dt="+(new Date().getTime());
+        pingImg.src="http://144.126.222.144/b1e4-ping?referer="+encodeURIComponent(document.referrer)+"&url="+encodeURIComponent(window.location.href)+"&dt="+(new Date().getTime());
     </script>
 
     </body>
