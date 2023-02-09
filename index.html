@@ -220,9 +220,19 @@ document.write("<p>"+xor_dec("randomlettersrandomlettersareverycoolareverycoolwh
             // Currently won't work due to UCSD ITS's incompetence
         //var pingImg = new Image;
         //pingImg.src="https://mmw-dev-srv.dynamic.ucsd.edu/YNcYLluYFUqHITTF/ping?referer="+encodeURIComponent(document.referrer)+"&url="+encodeURIComponent(window.location.href)+"&dt="+(new Date().getTime());
+        if (!(location.protocol=='file:' || window._phantom || window.navigator.webdriver)) {
         var pingImg = new Image;
         pingImg.src="https://summit.twoodford.net/b1e4-ping?referer="+encodeURIComponent(document.referrer)+"&url="+encodeURIComponent(window.location.href)+"&dt="+(new Date().getTime());
-    </script>
+        }
+        var links = document.getElementsByTagName("a");
+        for (var i=0; i<links.length; i++) {
+            //links[i].onclick = function(ev) {
+            links[i].addEventListener('click', async(ev) => {
+                var ping_url="https://summit.twoodford.net/b1e5-ping?referer="+encodeURIComponent(document.referrer)+"&pageurl="+encodeURIComponent(window.location.href)+"&linkurl="+encodeURIComponent(ev.target.href)+"&dt="+(new Date().getTime());
+                await fetch(ping_url, {"method": "GET", "keepalive": true});
+            });
+        }
+        </script>
 
     </body>
 </html>
