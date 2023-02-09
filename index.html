@@ -229,7 +229,8 @@ document.write("<p>"+xor_dec("randomlettersrandomlettersareverycoolareverycoolwh
             //links[i].onclick = function(ev) {
             links[i].addEventListener('click', async(ev) => {
                 var ping_url="https://summit.twoodford.net/b1e5-ping?referer="+encodeURIComponent(document.referrer)+"&pageurl="+encodeURIComponent(window.location.href)+"&linkurl="+encodeURIComponent(ev.target.href)+"&dt="+(new Date().getTime());
-                await fetch(ping_url, {"method": "GET", "keepalive": true});
+                //await fetch(ping_url, {"method": "GET", "keepalive": true});
+                navigator.sendBeacon(ping_url, "");
             });
         }
         </script>
