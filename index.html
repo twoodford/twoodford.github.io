@@ -45,9 +45,9 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="circ_img">
-                            <img src="static/img/mmwave-lidar-sensing.jpg"/>
+                            <img src="static/img/radar-kinect.jpg"/>
                         </div>
-                        <h2>Multispectral Sensing</h2>
+                        <h2>Cross-Wavelength Sensing</h2>
                         <p>Physics-based techniques enable new sensing and communications modalities by fusing information obtained at multiple wavelengths.</p>
                     </div>
                     <div class="col-lg-4">
@@ -229,7 +229,7 @@ document.write("<p>"+xor_dec("randomlettersrandomlettersareverycoolareverycoolwh
             //links[i].onclick = function(ev) {
             links[i].addEventListener('click', async(ev) => {
                 var ping_url="https://summit.twoodford.net/b1e5-ping?referer="+encodeURIComponent(document.referrer)+"&pageurl="+encodeURIComponent(window.location.href)+"&linkurl="+encodeURIComponent(ev.target.href)+"&dt="+(new Date().getTime());
-                //await fetch(ping_url, {"method": "GET", "keepalive": true});
+                //await fetch(ping_url, {method: "GET", keepalive: true});
                 navigator.sendBeacon(ping_url, "");
             });
         }
